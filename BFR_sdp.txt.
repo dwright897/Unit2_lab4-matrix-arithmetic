@@ -1,0 +1,17 @@
+The day cycle takes the following steps: Move animal, handle collision, bears that haven’t eaten lose lives, and new babies are added to the board. Consider how each of the four steps listed are accomplished. Estimate how many for loops you think you will need and explain your reasoning.
+move animal should need a for loop to move each animal, handle collision should need a for loop or two so it can handle accordingly, Bears that havent eaten lose lives should need a loop to check each bear to see if any should die, and new babies might need 2 or more because it needs one to check reproductive capabilities and another to make new babies. 
+
+River.place_baby() and River.animal_death() both impact the river’s self.animals, self.population, and self.river. Make some note/observations/inferences about how each of the two methods impact the listed self variables.
+the two methods will impact the rivers self.animals by using them to decide to get qualitites of the animal, population to add or remove a animal and river to update what the output looks like. 
+
+Describe the relationships between River.animal_death(), Animal.collision(), Animal.death(), and Bear.consume().
+They all have to do with the bear and the fish, if a bear and fish collide then the fish dies, and the bear consumes, and if the bear does not get any fish, bear dies. 
+
+Describe the relationships between Bear.starve(), Bear.consume(), Bear.lives, Bear.eaten_today, and Bear.max_lives.
+they all deal with the bear. They all affect the bear and if it will live or survive, if it has eaten, and how many lives. 
+
+Consider the River.redraw_cells() method. This method impacts the river array when an animal moves from one location to another.
+What TWO changes should be applied to the river array when an animal moves?
+The space the animal left should be updated and the space the animal now is in should be updated.
+When two of the same animal collide, should we redraw the board? Explain your reasoning and any alternatives to redrawing you can think of.
+I do not think its nessasary to redraw it every time, kind of how we are waiting until the end of the day to add babies, I think a print statment would give enough info, and maybe showing some sort of icon where they collided. 
